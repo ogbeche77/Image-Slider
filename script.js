@@ -1,12 +1,26 @@
-var change = document.querySelector (".btncolor");
-var changeBody = document.querySelector ("body");
 
-var colors = ["blue", "red", "green", "rgb(50, 168, 82)", "rgb(102, 122, 107)", "rgb(91, 207, 180)",
-"rgb(0, 59, 45)","rgb(45, 197, 224)", "rgb(250, 242, 5)" ]
+// New Line
+var img = document.getElementById("myImg");
 
-change.addEventListener("click", changeColor);
+var myImages =["img/web1.jpeg","img/web2.jpeg","img/web3.jpeg","img/web4.jpeg", "img/web5.jpeg","img/web6.jpeg",
+"img/web7.jpeg","img/web8.jpeg", "img/web9.jpeg","img/web10.jpeg"];
 
-function changeColor (){
-     let random = Math.floor(Math.random()* colors.length)
-     changeBody.style.backgroundColor = colors[random];
+function change_image(){
+     let random = Math.floor(Math.random()* myImages.length) // assigns random numbers, so images are displayed randomly
+     img.src = myImages[random];
+
 }
+
+
+// The function could also be called below but not randomly
+/*
+var img_index = 0;
+
+function change_image (){
+img_index = ++img_index % 10,
+img.src = myImages[img_index]; 
+
+}
+*/
+
+

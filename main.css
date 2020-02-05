@@ -3,11 +3,17 @@ body {
     display: flex;
     justify-content:center ;
     align-items: center;
-    
+    background-color: black;
+
+}
+img{ width:auto;
+
 
 }
 
-.btncolor{
+
+
+.btnPrev, .btnNext{
     padding: 0.25rem 0.5rem;
     border: 3px solid #fefefe;
     border-radius: 8px;
@@ -20,6 +26,6 @@ body {
 
 }
 
-.btncolor:hover{
+.btnPrev:hover{
     background: rgb(0,0,5);
 }
